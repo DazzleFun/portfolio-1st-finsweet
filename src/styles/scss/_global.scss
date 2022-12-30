@@ -1,0 +1,138 @@
+//# Display
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//# Buttons
+.navbar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font: 500 16px "Roboto", sans-serif;
+  color: white;
+  border-radius: 4px;
+  background-color: $primary-text;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease-in-out;
+  &:hover, &:active {
+    background-color: $primary-text-hover;
+    color: white;
+  }
+}
+.secondary-button {
+  @extend .navbar-button;
+  color: $black;
+  background-color: white;
+  &:hover, &:active {
+    background-color: $off-white;
+    color: $black;
+  }
+}
+.primary-button {
+  @extend .navbar-button;
+  background-color: $green-primary;
+  &:hover, &:active {
+    background-color: $green-primary-hover;
+  }
+}
+
+//# Elements
+.line72px {
+  display: flex;
+  width: 100%;
+  max-width: 72px;
+  min-height: 2px;
+  max-height: 2px;
+  margin-top: $c6_5-8_5;
+  margin-right: 24px;
+  background-color: $primary-text;
+  @media (max-width: 1310px) {
+    max-width: 48px;
+    margin-right: 15px;
+  }
+  @media (max-width: 1200px) {
+    max-width: 24px;
+  }
+  @media (max-width: 768px) {
+    max-width: 12px;
+  }
+}
+
+//# Fonts
+.p-700-16px-section {
+  font: 700 $c14-16 "Roboto", sans-serif;
+  color: $primary-text;
+  letter-spacing: 2px;
+}
+.p-700-48px-title {
+  font: 700 $c32-48 "Roboto", sans-serif;
+  color: $primary-text;
+  line-height: 120%;
+}
+.s-400-16px-paragraph {
+  font: 400 $c14-16 "Roboto", sans-serif;
+  color: $secondary-text;
+  line-height: 160%;
+}
+.p-500-16px-title {
+  flex: 1 0 auto;
+  font: 500 $c14-16 "Roboto", sans-serif;
+  color: $primary-text;
+  letter-spacing: 2px;
+}
+.p-700-24px-title {
+  font: 700 $c18-24 "Roboto", sans-serif;
+  color: $primary-text;
+  letter-spacing: 2px;
+}
+.w-700-28px-title {
+  font: 700 $c22-28 "Roboto", sans-serif;
+  color: white;
+  line-height: 150%;
+}
+.w-400-16px-paragraph {
+  @extend .s-400-16px-paragraph;
+  color: white;
+}
+.w-400-16px-paragraph-op {
+  @extend .w-400-16px-paragraph;
+  color: white;
+  opacity: 0.6;
+}
+.w-700-28px-logo {
+  font: 700 28px "Roboto", sans-serif;
+  color: white;
+}
+.w-700-48px-title {
+  font: 700 $c32-48 "Roboto", sans-serif;
+  color: white;
+  line-height: 120%;
+}
+.p-500-40px-title {
+  flex: 1 0 auto;
+  font: 500 $c30-40 "Roboto", sans-serif;
+  color: $primary-text;
+  line-height: 140%;
+}
+.b-500-20px-title {
+  font: 500 $c16-20 "Roboto", sans-serif;
+  color: $black;
+  line-height: 150%;
+}
+.p-700-28px-title {
+  @extend .w-700-28px-title;
+  color: $primary-text;
+}
+.p-400-16px-paragraph {
+  @extend .s-400-16px-paragraph;
+  color: $primary-text;
+}
+.p-700-56px-title {
+  font: 700 $c42-56 "Roboto", sans-serif;
+  color: $primary-text;
+  line-height: 120%;
+}
